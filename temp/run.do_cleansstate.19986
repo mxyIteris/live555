@@ -1,0 +1,69 @@
+def do_cleansstate(d):
+        sstate_clean_cachefiles(d)
+
+do_cleansstate(d)
+
+def sstate_clean_cachefiles(d):
+    for task in (d.getVar('SSTATETASKS', True) or "").split():
+        ld = d.createCopy()
+        ss = sstate_state_fromvars(ld, task)
+        sstate_clean_cachefile(ss, ld)
+
+def sstate_state_fromvars(d, task = None):
+    if task is None:
+        task = d.getVar('BB_CURRENTTASK', True)
+        if not task:
+            bb.fatal("sstate code running without task context?!")
+        task = task.replace("_setscene", "")
+
+    if task.startswith("do_"):
+        task = task[3:]
+    inputs = (d.getVarFlag("do_" + task, 'sstate-inputdirs', True) or "").split()
+    outputs = (d.getVarFlag("do_" + task, 'sstate-outputdirs', True) or "").split()
+    plaindirs = (d.getVarFlag("do_" + task, 'sstate-plaindirs', True) or "").split()
+    lockfiles = (d.getVarFlag("do_" + task, 'sstate-lockfile', True) or "").split()
+    lockfilesshared = (d.getVarFlag("do_" + task, 'sstate-lockfile-shared', True) or "").split()
+    interceptfuncs = (d.getVarFlag("do_" + task, 'sstate-interceptfuncs', True) or "").split()
+    if not task or len(inputs) != len(outputs):
+        bb.fatal("sstate variables not setup correctly?!")
+
+    if task == "populate_lic":
+        d.setVar("SSTATE_PKGSPEC", "sstate:live555::20160919:r0::3:")
+        d.setVar("SSTATE_EXTRAPATH", "")
+
+    ss = sstate_init(task, d)
+    for i in range(len(inputs)):
+        sstate_add(ss, inputs[i], outputs[i], d)
+    ss['lockfiles'] = lockfiles
+    ss['lockfiles-shared'] = lockfilesshared
+    ss['plaindirs'] = plaindirs
+    ss['interceptfuncs'] = interceptfuncs
+    return ss
+
+def sstate_clean_cachefile(ss, d):
+    import oe.path
+
+    sstatepkgfile = d.getVar('SSTATE_PATHSPEC', True) + "*_" + ss['task'] + ".tgz*"
+    bb.note("Removing %s" % sstatepkgfile)
+    oe.path.remove(sstatepkgfile)
+
+def sstate_add(ss, source, dest, d):
+    if not source.endswith("/"):
+         source = source + "/"
+    if not dest.endswith("/"):
+         dest = dest + "/"
+    source = os.path.normpath(source)
+    dest = os.path.normpath(dest)
+    srcbase = os.path.basename(source)
+    ss['dirs'].append([srcbase, source, dest])
+    return ss
+
+def sstate_init(task, d):
+    ss = {}
+    ss['task'] = task
+    ss['dirs'] = []
+    ss['plaindirs'] = []
+    ss['lockfiles'] = []
+    ss['lockfiles-shared'] = []
+    return ss
+

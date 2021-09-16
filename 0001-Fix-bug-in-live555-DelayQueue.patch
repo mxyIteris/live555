@@ -1,0 +1,68 @@
+From 770ad99ae75e51b1e08a9ce1eb1d223eb4e7003d Mon Sep 17 00:00:00 2001
+From: charles <charles@au-zone.com>
+Date: Fri, 30 Sep 2016 15:00:10 -0600
+Subject: [PATCH] Fix bug in live555 DelayQueue object which can lead to
+ infinite looping
+
+---
+ .../BasicUsageEnvironment/DelayQueue.cpp   | 18 ++++++++++++++----
+ 1 file changed, 14 insertions(+), 4 deletions(-)
+
+diff --git a/BasicUsageEnvironment/DelayQueue.cpp b/BasicUsageEnvironment/DelayQueue.cpp
+index 17ec6f9..65792f0 100644
+--- a/BasicUsageEnvironment/DelayQueue.cpp
++++ b/BasicUsageEnvironment/DelayQueue.cpp
+@@ -47,7 +47,6 @@ void Timeval::operator-=(const DelayInterval& arg2) {
+   }
+   if ((int)seconds() < 0)
+     secs() = usecs() = 0;
+-
+ }
+ 
+ DelayInterval operator-(const Timeval& arg1, const Timeval& arg2) {
+@@ -132,7 +131,10 @@ void DelayQueue::addEntry(DelayQueueEntry* newEntry) {
+     cur = cur->fNext;
+   }
+ 
+-  cur->fDeltaTimeRemaining -= newEntry->fDeltaTimeRemaining;
++  if (cur->fDeltaTimeRemaining != ETERNITY)
++  {
++    cur->fDeltaTimeRemaining -= newEntry->fDeltaTimeRemaining;
++  }
+ 
+   // Add "newEntry" to the queue, just before "cur":
+   newEntry->fNext = cur;
+@@ -156,7 +158,10 @@ void DelayQueue::updateEntry(intptr_t tokenToFind, DelayInterval newDelay) {
+ void DelayQueue::removeEntry(DelayQueueEntry* entry) {
+   if (entry == NULL || entry->fNext == NULL) return;
+ 
+-  entry->fNext->fDeltaTimeRemaining += entry->fDeltaTimeRemaining;
++  if (entry->fNext->fDeltaTimeRemaining != ETERNITY)
++  {
++    entry->fNext->fDeltaTimeRemaining += entry->fDeltaTimeRemaining;
++  }
+   entry->fPrev->fNext = entry->fNext;
+   entry->fNext->fPrev = entry->fPrev;
+   entry->fNext = entry->fPrev = NULL;
+@@ -211,12 +216,17 @@ void DelayQueue::synchronize() {
+ 
+   // Then, adjust the delay queue for any entries whose time is up:
+   DelayQueueEntry* curEntry = head();
++
+   while (timeSinceLastSync >= curEntry->fDeltaTimeRemaining) {
+     timeSinceLastSync -= curEntry->fDeltaTimeRemaining;
+     curEntry->fDeltaTimeRemaining = DELAY_ZERO;
+     curEntry = curEntry->fNext;
+   }
+-  curEntry->fDeltaTimeRemaining -= timeSinceLastSync;
++
++  if (curEntry->fDeltaTimeRemaining != ETERNITY)
++  {
++    curEntry->fDeltaTimeRemaining -= timeSinceLastSync;
++  }
+ }
+ 
+ 
+-- 
+1.9.1
+

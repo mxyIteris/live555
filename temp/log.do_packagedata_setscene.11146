@@ -1,0 +1,42 @@
+DEBUG: Executing python function do_packagedata_setscene
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/live555
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/live555-locale
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/live555-dev.packaged
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/live555-dbg
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/live555-dev
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/live555
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/live555-doc
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/live555-dbg.packaged
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/live555-staticdev
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/live555-staticdev.packaged
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime-reverse/live555-dbg
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime-reverse/live555-dev
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime-reverse/live555-staticdev
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime-rprovides/
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime-reverse/
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/shlibs2/
+DEBUG: Removing manifest: /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata/runtime/
+DEBUG: Executing shell function sstate_unpack_package
+pkgdata/
+pkgdata/runtime-rprovides/
+pkgdata/runtime/
+pkgdata/runtime/live555-locale
+pkgdata/runtime/live555-dev.packaged
+pkgdata/runtime/live555-dbg
+pkgdata/runtime/live555-dev
+pkgdata/runtime/live555
+pkgdata/runtime/live555-doc
+pkgdata/runtime/live555-dbg.packaged
+pkgdata/runtime/live555-staticdev
+pkgdata/runtime/live555-staticdev.packaged
+pkgdata/runtime-reverse/
+pkgdata/runtime-reverse/live555-dbg
+pkgdata/runtime-reverse/live555-dev
+pkgdata/runtime-reverse/live555-staticdev
+pkgdata/live555
+pkgdata/shlibs2/
+DEBUG: Shell function sstate_unpack_package finished
+DEBUG: Executing python function sstate_hardcode_path_unpack
+DEBUG: Python function sstate_hardcode_path_unpack finished
+DEBUG: Staging files from /home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/pkgdata to /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/pkgdata
+DEBUG: Python function do_packagedata_setscene finished

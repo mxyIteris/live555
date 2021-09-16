@@ -1,0 +1,61 @@
+DEBUG: Executing shell function do_compile
+cd liveMedia ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/liveMedia'
+arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed --sysroot=/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6 -c -Iinclude -I../UsageEnvironment/include -I../groupsock/include -I. -O2 -DSOCKLEN_T=socklen_t -DNO_STRSTREAM=1 -D_LARGEFILE_SOURCE=1 -fPIC  -Wall -DBSD=1 RTSPServer.cpp
+RTSPServer.cpp: In member function 'virtual void RTSPServer::RTSPClientConnection::handleRequestBytes(int)':
+RTSPServer.cpp:773:17: error: invalid use of non-static data member 'RTSPServer::numSessions'
+             if (numSessions < 3) {
+                 ^
+In file included from RTSPServer.cpp:21:0:
+include/RTSPServer.hh:129:7: note: declared here
+   int numSessions;
+       ^
+RTSPServer.cpp:785:7: error: invalid use of non-static data member 'RTSPServer::numSessions'
+   if (numSessions >= 3) {
+       ^
+In file included from RTSPServer.cpp:21:0:
+include/RTSPServer.hh:129:7: note: declared here
+   int numSessions;
+       ^
+RTSPServer.cpp:793:13: error: invalid use of non-static data member 'RTSPServer::numSessions'
+  } else if (numSessions >= 3) {
+             ^
+In file included from RTSPServer.cpp:21:0:
+include/RTSPServer.hh:129:7: note: declared here
+   int numSessions;
+       ^
+RTSPServer.cpp: In constructor 'RTSPServer::RTSPClientSession::RTSPClientSession(RTSPServer&, u_int32_t)':
+RTSPServer.cpp:1128:1: error: invalid use of non-static data member 'RTSPServer::numSessions'
+ numSessions++;
+ ^
+In file included from RTSPServer.cpp:21:0:
+include/RTSPServer.hh:129:7: note: declared here
+   int numSessions;
+       ^
+RTSPServer.cpp:1129:39: error: invalid use of non-static data member 'RTSPServer::numSessions'
+ printf ("%d +++++++  %s - %s - %d\n", numSessions, __FILE__, __func__, __LINE__);
+                                       ^
+In file included from RTSPServer.cpp:21:0:
+include/RTSPServer.hh:129:7: note: declared here
+   int numSessions;
+       ^
+RTSPServer.cpp: In destructor 'virtual RTSPServer::RTSPClientSession::~RTSPClientSession()':
+RTSPServer.cpp:1133:1: error: invalid use of non-static data member 'RTSPServer::numSessions'
+ numSessions--;
+ ^
+In file included from RTSPServer.cpp:21:0:
+include/RTSPServer.hh:129:7: note: declared here
+   int numSessions;
+       ^
+RTSPServer.cpp:1134:39: error: invalid use of non-static data member 'RTSPServer::numSessions'
+ printf ("%d +++++++  %s - %s - %d\n", numSessions, __FILE__, __func__, __LINE__);
+                                       ^
+In file included from RTSPServer.cpp:21:0:
+include/RTSPServer.hh:129:7: note: declared here
+   int numSessions;
+       ^
+make[1]: *** [RTSPServer.o] Error 1
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/liveMedia'
+make: *** [all] Error 2
+WARNING: exit code 2 from a shell command.
+ERROR: Function failed: do_compile (log file is located at /home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/temp/log.do_compile.22134)

@@ -1,0 +1,8 @@
+DEBUG: Executing python function do_cleansstate
+NOTE: Removing /home/hle/disk/projects/monotonic/build/sstate-cache/*/sstate:live555::20160919:r0::3:*_populate_lic.tgz*
+NOTE: Removing /home/hle/disk/projects/monotonic/build/sstate-cache/*/sstate:live555:cortexa9hf-vfp-neon-poky-linux-gnueabi:20160919:r0:cortexa9hf-vfp-neon:3:*_package_write_rpm.tgz*
+NOTE: Removing /home/hle/disk/projects/monotonic/build/sstate-cache/*/sstate:live555:cortexa9hf-vfp-neon-poky-linux-gnueabi:20160919:r0:cortexa9hf-vfp-neon:3:*_package_qa.tgz*
+NOTE: Removing /home/hle/disk/projects/monotonic/build/sstate-cache/*/sstate:live555:cortexa9hf-vfp-neon-poky-linux-gnueabi:20160919:r0:cortexa9hf-vfp-neon:3:*_populate_sysroot.tgz*
+NOTE: Removing /home/hle/disk/projects/monotonic/build/sstate-cache/*/sstate:live555:cortexa9hf-vfp-neon-poky-linux-gnueabi:20160919:r0:cortexa9hf-vfp-neon:3:*_packagedata.tgz*
+NOTE: Removing /home/hle/disk/projects/monotonic/build/sstate-cache/*/sstate:live555:cortexa9hf-vfp-neon-poky-linux-gnueabi:20160919:r0:cortexa9hf-vfp-neon:3:*_package.tgz*
+DEBUG: Python function do_cleansstate finished

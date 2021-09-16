@@ -1,0 +1,13 @@
+PN: live555
+PV: 20160919
+PR: r0
+PKGV: 20160919
+PKGR: r0
+LICENSE: LGPLv3
+DESCRIPTION: LIVE555 Streaming Media libraries
+SUMMARY: live555 version 20160919-r0
+SECTION: devel
+PKG_live555: live555
+FILES_live555: /usr/bin/* /usr/sbin/* /usr/lib/live555/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev/rules.d /usr/lib/udev/rules.d /usr/share/live555 /usr/lib/live555/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+FILES_INFO: {}
+PKGSIZE_live555: 0

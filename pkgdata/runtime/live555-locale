@@ -1,0 +1,13 @@
+PN: live555
+PV: 20160919
+PR: r0
+PKGV: 20160919
+PKGR: r0
+LICENSE: LGPLv3
+DESCRIPTION: LIVE555 Streaming Media libraries
+SUMMARY: live555 version 20160919-r0
+SECTION: devel
+PKG_live555-locale: live555-locale
+FILES_live555-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_live555-locale: 0

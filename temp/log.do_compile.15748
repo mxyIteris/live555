@@ -1,0 +1,16 @@
+DEBUG: Executing shell function do_compile
+cd liveMedia ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/liveMedia'
+arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed --sysroot=/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6 -c -Iinclude -I../UsageEnvironment/include -I../groupsock/include -I. -O2 -DSOCKLEN_T=socklen_t -DNO_STRSTREAM=1 -D_LARGEFILE_SOURCE=1 -fPIC  -Wall -DBSD=1 H264VideoRTPSink.cpp
+H264VideoRTPSink.cpp: In member function 'virtual const char* H264VideoRTPSink::auxSDPLine()':
+H264VideoRTPSink.cpp:96:9: error: 'sps_bytes' was not declared in this scope
+   sps = sps_bytes;
+         ^
+H264VideoRTPSink.cpp:97:9: error: 'pps_bytes' was not declared in this scope
+   pps = pps_bytes;
+         ^
+make[1]: *** [H264VideoRTPSink.o] Error 1
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/liveMedia'
+make: *** [all] Error 2
+WARNING: exit code 2 from a shell command.
+ERROR: Function failed: do_compile (log file is located at /home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/temp/log.do_compile.15748)

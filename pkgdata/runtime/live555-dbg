@@ -1,0 +1,14 @@
+PN: live555
+PV: 20160919
+PR: r0
+PKGV: 20160919
+PKGR: r0
+LICENSE: LGPLv3
+DESCRIPTION_live555-dbg: LIVE555 Streaming Media libraries  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_live555-dbg: live555 version 20160919-r0 - Debugging files
+SECTION_live555-dbg: devel
+PKG_live555-dbg: live555-dbg
+ALLOW_EMPTY_live555-dbg: 1
+FILES_live555-dbg: /usr/bin/.debug /usr/sbin/.debug /usr/lib/live555/.debug /usr/lib/.debug /bin/.debug /sbin/.debug /lib/.debug /usr/lib/live555/.debug /usr/lib/matchbox-panel/.debug /usr/lib/live555/live555/.debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_live555-dbg: 0

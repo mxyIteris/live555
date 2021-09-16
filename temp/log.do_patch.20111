@@ -1,0 +1,55 @@
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Searching for config.linux-cross in paths:
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/
+DEBUG: Searching for 0001-Fix-bug-in-live555-DelayQueue.patch in paths:
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/
+NOTE: Applying patch '0001-Fix-bug-in-live555-DelayQueue.patch' (../sources/meta-iteris/recipes-multimedia/live555/files/0001-Fix-bug-in-live555-DelayQueue.patch)
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished

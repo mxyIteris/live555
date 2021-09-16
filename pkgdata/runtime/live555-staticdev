@@ -1,0 +1,14 @@
+PN: live555
+PV: 20160919
+PR: r0
+PKGV: 20160919
+PKGR: r0
+LICENSE: LGPLv3
+DESCRIPTION_live555-staticdev: LIVE555 Streaming Media libraries  This package contains static libraries for software development.
+SUMMARY_live555-staticdev: live555 version 20160919-r0 - Development files (Static Libraries)
+RDEPENDS_live555-staticdev: live555-dev (= 20160919-r0)
+SECTION_live555-staticdev: devel
+PKG_live555-staticdev: live555-staticdev
+FILES_live555-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/live555/*.a
+FILES_INFO: {"/usr/lib/libBasicUsageEnvironment.a": 32008, "/usr/lib/libgroupsock.a": 44704, "/usr/lib/libUsageEnvironment.a": 5424, "/usr/lib/libliveMedia.a": 971168}
+PKGSIZE_live555-staticdev: 1053304

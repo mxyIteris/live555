@@ -1,0 +1,30 @@
+DEBUG: Executing shell function do_compile
+cd liveMedia ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/liveMedia'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/liveMedia'
+cd groupsock ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/groupsock'
+arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed --sysroot=/home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp -c -Iinclude -I../UsageEnvironment/include -I. -O2 -DSOCKLEN_T=socklen_t -DNO_STRSTREAM=1 -D_LARGEFILE_SOURCE=1 -fPIC  -Wall -DBSD=1 GroupsockHelper.cpp
+GroupsockHelper.cpp:218:0: warning: "SO_REUSEPORT" redefined
+ #define SO_REUSEPORT
+ ^
+In file included from /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/usr/include/asm/socket.h:1:0,
+                 from /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/usr/include/bits/socket.h:349,
+                 from /home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/usr/include/sys/socket.h:38,
+                 from include/NetCommon.h:95,
+                 from include/NetAddress.hh:29,
+                 from include/GroupsockHelper.hh:25,
+                 from GroupsockHelper.cpp:21:
+/home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp/usr/include/asm-generic/socket.h:25:0: note: this is the location of the previous definition
+ #define SO_REUSEPORT 15
+ ^
+GroupsockHelper.cpp: In function 'int setupStreamSocket(UsageEnvironment&, Port, Boolean)':
+GroupsockHelper.cpp:250:53: error: expected primary-expression before ',' token
+   if (setsockopt(newSocket, SOL_SOCKET, SO_REUSEPORT,
+                                                     ^
+make[1]: *** [GroupsockHelper.o] Error 1
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/groupsock'
+make: *** [all] Error 2
+WARNING: exit code 2 from a shell command.
+ERROR: Function failed: do_compile (log file is located at /home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/temp/log.do_compile.30408)

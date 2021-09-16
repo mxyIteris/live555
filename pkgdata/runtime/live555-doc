@@ -1,0 +1,13 @@
+PN: live555
+PV: 20160919
+PR: r0
+PKGV: 20160919
+PKGR: r0
+LICENSE: LGPLv3
+DESCRIPTION_live555-doc: LIVE555 Streaming Media libraries  This package contains documentation.
+SUMMARY_live555-doc: live555 version 20160919-r0 - Documentation files
+SECTION_live555-doc: doc
+PKG_live555-doc: live555-doc
+FILES_live555-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_live555-doc: 0

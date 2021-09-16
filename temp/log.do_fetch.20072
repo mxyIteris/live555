@@ -1,0 +1,106 @@
+DEBUG: Executing python function do_fetch
+DEBUG: Executing python function base_do_fetch
+DEBUG: Fetcher accessed the network with the command git -c core.fsyncobjectfiles=0 ls-remote ssh://git@github.com/Au-Zone/live555.git 
+DEBUG: Running export SSH_AUTH_SOCK="/run/user/1000/keyring-TGCCvc/ssh"; export PATH="/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6/usr/bin/crossscripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/bin:/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/sources/poky/bitbake/bin:/home/hle/bin:/home/hle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"; export HOME="/home/hle"; git -c core.fsyncobjectfiles=0 ls-remote ssh://git@github.com/Au-Zone/live555.git 
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['git', 'github.com', '/Au-Zone/live555.git', 'git', '', {'protocol': 'ssh'}] comparing ['bzr', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['git', 'github.com', '/Au-Zone/live555.git', 'git', '', {'protocol': 'ssh'}] comparing ['cvs', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['git', 'github.com', '/Au-Zone/live555.git', 'git', '', {'protocol': 'ssh'}] comparing ['git', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url git://git@github.com/Au-Zone/live555.git;protocol=ssh returning http://downloads.yoctoproject.org/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz', '', '', {}] comparing ['bzr', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz', '', '', {}] comparing ['cvs', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz', '', '', {}] comparing ['gitsm', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz', '', '', {}] comparing ['hg', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz', '', '', {}] comparing ['osc', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz', '', '', {}] comparing ['p4', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['http', 'downloads.yoctoproject.org', '/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz', '', '', {}] comparing ['svn', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['git', 'github.com', '/Au-Zone/live555.git', 'git', '', {'protocol': 'ssh'}] comparing ['gitsm', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['git', 'github.com', '/Au-Zone/live555.git', 'git', '', {'protocol': 'ssh'}] comparing ['hg', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['git', 'github.com', '/Au-Zone/live555.git', 'git', '', {'protocol': 'ssh'}] comparing ['osc', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['git', 'github.com', '/Au-Zone/live555.git', 'git', '', {'protocol': 'ssh'}] comparing ['p4', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['git', 'github.com', '/Au-Zone/live555.git', 'git', '', {'protocol': 'ssh'}] comparing ['svn', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: Fetching http://downloads.yoctoproject.org/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz using command '/usr/bin/env wget -t 2 -T 30 -nv --passive-ftp --no-check-certificate -P /home/hle/disk/projects/monotonic/build/downloads 'http://downloads.yoctoproject.org/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz''
+DEBUG: Fetcher accessed the network with the command /usr/bin/env wget -t 2 -T 30 -nv --passive-ftp --no-check-certificate -P /home/hle/disk/projects/monotonic/build/downloads 'http://downloads.yoctoproject.org/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz'
+DEBUG: Running export SSH_AUTH_SOCK="/run/user/1000/keyring-TGCCvc/ssh"; export PATH="/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6/usr/bin/crossscripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/bin:/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/sources/poky/bitbake/bin:/home/hle/bin:/home/hle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"; export HOME="/home/hle"; /usr/bin/env wget -t 2 -T 30 -nv --passive-ftp --no-check-certificate -P /home/hle/disk/projects/monotonic/build/downloads 'http://downloads.yoctoproject.org/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz'
+DEBUG: Mirror fetch failure for url http://downloads.yoctoproject.org/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz (original url: git://git@github.com/Au-Zone/live555.git;protocol=ssh)
+DEBUG: Fetcher failure: Fetch command failed with exit code 8, output:
+http://downloads.yoctoproject.org/mirror/sources/git2_github.com.Au-Zone.live555.git.tar.gz:
+2019-02-05 17:09:52 ERROR 404: Not Found.
+
+DEBUG: Trying Upstream
+DEBUG: Fetcher accessed the network with the command git -c core.fsyncobjectfiles=0 clone --bare --mirror ssh://git@github.com/Au-Zone/live555.git /home/hle/disk/projects/monotonic/build/downloads/git2/github.com.Au-Zone.live555.git
+DEBUG: Running export SSH_AUTH_SOCK="/run/user/1000/keyring-TGCCvc/ssh"; export PATH="/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6/usr/bin/crossscripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/bin:/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/sources/poky/bitbake/bin:/home/hle/bin:/home/hle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"; export HOME="/home/hle"; git -c core.fsyncobjectfiles=0 clone --bare --mirror ssh://git@github.com/Au-Zone/live555.git /home/hle/disk/projects/monotonic/build/downloads/git2/github.com.Au-Zone.live555.git
+DEBUG: Running export SSH_AUTH_SOCK="/run/user/1000/keyring-TGCCvc/ssh"; export PATH="/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6/usr/bin/crossscripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/bin:/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/sources/poky/bitbake/bin:/home/hle/bin:/home/hle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"; export HOME="/home/hle"; git -c core.fsyncobjectfiles=0 branch --contains 3a4fa497f46c17ffe1cb9d267a3fa6fbab667122 --list master 2> /dev/null | wc -l
+DEBUG: Running export SSH_AUTH_SOCK="/run/user/1000/keyring-TGCCvc/ssh"; export PATH="/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6/usr/bin/crossscripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/bin:/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/sources/poky/bitbake/bin:/home/hle/bin:/home/hle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"; export HOME="/home/hle"; git -c core.fsyncobjectfiles=0 branch --contains 3a4fa497f46c17ffe1cb9d267a3fa6fbab667122 --list master 2> /dev/null | wc -l
+DEBUG: Searching for config.linux-cross in paths:
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['file', '', 'config.linux-cross', '', '', {}] comparing ['bzr', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', 'config.linux-cross', '', '', {}] comparing ['cvs', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', 'config.linux-cross', '', '', {}] comparing ['git', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', 'config.linux-cross', '', '', {}] comparing ['gitsm', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', 'config.linux-cross', '', '', {}] comparing ['hg', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', 'config.linux-cross', '', '', {}] comparing ['osc', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', 'config.linux-cross', '', '', {}] comparing ['p4', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', 'config.linux-cross', '', '', {}] comparing ['svn', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: Trying Upstream
+DEBUG: Searching for 0001-Fix-bug-in-live555-DelayQueue.patch in paths:
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/
+DEBUG: Trying PREMIRRORS
+DEBUG: For url ['file', '', '0001-Fix-bug-in-live555-DelayQueue.patch', '', '', {}] comparing ['bzr', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', '0001-Fix-bug-in-live555-DelayQueue.patch', '', '', {}] comparing ['cvs', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', '0001-Fix-bug-in-live555-DelayQueue.patch', '', '', {}] comparing ['git', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', '0001-Fix-bug-in-live555-DelayQueue.patch', '', '', {}] comparing ['gitsm', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', '0001-Fix-bug-in-live555-DelayQueue.patch', '', '', {}] comparing ['hg', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', '0001-Fix-bug-in-live555-DelayQueue.patch', '', '', {}] comparing ['osc', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', '0001-Fix-bug-in-live555-DelayQueue.patch', '', '', {}] comparing ['p4', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: For url ['file', '', '0001-Fix-bug-in-live555-DelayQueue.patch', '', '', {}] comparing ['svn', '.*', '/.*', '', '', {}] to ['http', 'downloads.yoctoproject.org', '/mirror/sources/', '', '', {}]
+DEBUG: Trying Upstream
+DEBUG: Python function base_do_fetch finished
+DEBUG: Python function do_fetch finished

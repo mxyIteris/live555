@@ -1,0 +1,35 @@
+DEBUG: Executing shell function do_compile
+cd liveMedia ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/liveMedia'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/liveMedia'
+cd groupsock ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/groupsock'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/groupsock'
+cd UsageEnvironment ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/UsageEnvironment'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/UsageEnvironment'
+cd BasicUsageEnvironment ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/BasicUsageEnvironment'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/BasicUsageEnvironment'
+cd testProgs ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/testProgs'
+arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed --sysroot=/home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp -c -I../UsageEnvironment/include -I../groupsock/include -I../liveMedia/include -I../BasicUsageEnvironment/include -I. -O2 -DSOCKLEN_T=socklen_t -DNO_STRSTREAM=1 -D_LARGEFILE_SOURCE=1 -fPIC  -Wall -DBSD=1 testH264VideoStreamer.cpp
+arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed --sysroot=/home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp -otestH264VideoStreamer -L. -lrt testH264VideoStreamer.o ../liveMedia/libliveMedia.a ../groupsock/libgroupsock.a ../BasicUsageEnvironment/libBasicUsageEnvironment.a ../UsageEnvironment/libUsageEnvironment.a 
+arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed --sysroot=/home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp -c -I../UsageEnvironment/include -I../groupsock/include -I../liveMedia/include -I../BasicUsageEnvironment/include -I. -O2 -DSOCKLEN_T=socklen_t -DNO_STRSTREAM=1 -D_LARGEFILE_SOURCE=1 -fPIC  -Wall -DBSD=1 testH265VideoStreamer.cpp
+arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed --sysroot=/home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp -otestH265VideoStreamer -L. -lrt testH265VideoStreamer.o ../liveMedia/libliveMedia.a ../groupsock/libgroupsock.a ../BasicUsageEnvironment/libBasicUsageEnvironment.a ../UsageEnvironment/libUsageEnvironment.a 
+arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed --sysroot=/home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp -c -I../UsageEnvironment/include -I../groupsock/include -I../liveMedia/include -I../BasicUsageEnvironment/include -I. -O2 -DSOCKLEN_T=socklen_t -DNO_STRSTREAM=1 -D_LARGEFILE_SOURCE=1 -fPIC  -Wall -DBSD=1 testOnDemandRTSPServer.cpp
+arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed --sysroot=/home/hle/disk/projects/monotonic/build/tmp/sysroots/dvp -otestOnDemandRTSPServer -L. -lrt testOnDemandRTSPServer.o ../liveMedia/libliveMedia.a ../groupsock/libgroupsock.a ../BasicUsageEnvironment/libBasicUsageEnvironment.a ../UsageEnvironment/libUsageEnvironment.a 
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/testProgs'
+cd mediaServer ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/mediaServer'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/mediaServer'
+cd proxyServer ; make
+make[1]: Entering directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/proxyServer'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/proxyServer'
+DEBUG: Shell function do_compile finished

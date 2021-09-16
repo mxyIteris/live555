@@ -1,0 +1,63 @@
+DEBUG: Executing python function do_unpack
+DEBUG: Executing python function base_do_unpack
+DEBUG: Running export SSH_AUTH_SOCK="/run/user/1000/keyring-TGCCvc/ssh"; export PATH="/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6/usr/bin/crossscripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/bin:/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/sources/poky/bitbake/bin:/home/hle/bin:/home/hle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"; export HOME="/home/hle"; git -c core.fsyncobjectfiles=0 clone -s -n /home/hle/disk/projects/monotonic/build/downloads/git2/github.com.Au-Zone.live555.git/ /home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git/
+DEBUG: Running export SSH_AUTH_SOCK="/run/user/1000/keyring-TGCCvc/ssh"; export PATH="/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6/usr/bin/crossscripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/bin:/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/sources/poky/bitbake/bin:/home/hle/bin:/home/hle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"; export HOME="/home/hle"; git -c core.fsyncobjectfiles=0 remote set-url origin ssh://git@github.com/Au-Zone/live555.git
+DEBUG: Running export SSH_AUTH_SOCK="/run/user/1000/keyring-TGCCvc/ssh"; export PATH="/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6/usr/bin/crossscripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/bin:/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/sources/poky/bitbake/bin:/home/hle/bin:/home/hle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"; export HOME="/home/hle"; git -c core.fsyncobjectfiles=0 checkout -B master 3a4fa497f46c17ffe1cb9d267a3fa6fbab667122
+DEBUG: Running export SSH_AUTH_SOCK="/run/user/1000/keyring-TGCCvc/ssh"; export PATH="/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/hle/disk/projects/monotonic/build/tmp/sysroots/ccu6/usr/bin/crossscripts:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/usr/bin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/sbin:/home/hle/disk/projects/monotonic/build/tmp/sysroots/x86_64-linux/bin:/home/hle/disk/projects/monotonic/sources/poky/scripts:/home/hle/disk/projects/monotonic/sources/poky/bitbake/bin:/home/hle/bin:/home/hle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"; export HOME="/home/hle"; git -c core.fsyncobjectfiles=0 branch --set-upstream master origin/master
+DEBUG: Searching for config.linux-cross in paths:
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/
+NOTE: Unpacking /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/config.linux-cross to /home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/
+DEBUG: Searching for 0001-Fix-bug-in-live555-DelayQueue.patch in paths:
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/poky
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/ccu6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6q
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/mx6
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/imx
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/armv7a
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/arm
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555-20160919/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/live555/
+    /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/
+NOTE: Unpacking /home/hle/disk/projects/monotonic/sources/meta-iteris/recipes-multimedia/live555/files/0001-Fix-bug-in-live555-DelayQueue.patch to /home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/
+DEBUG: Python function base_do_unpack finished
+DEBUG: Python function do_unpack finished
+DEBUG: Executing python function do_qa_unpack
+NOTE: Checking has /home/hle/disk/projects/monotonic/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/live555/20160919-r0/git been created
+DEBUG: Python function do_qa_unpack finished
